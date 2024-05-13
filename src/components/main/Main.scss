@@ -1,0 +1,54 @@
+$main-theme: black;
+$font-color: #EAF0F1;
+
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background-color: $main-theme;
+    color: $font-color;
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 22px;
+        padding: 20px;
+        color: $font-color;
+
+        img{
+            width: 45px;
+            border-radius: 50%
+        };
+    }
+
+    .main-container{
+        max-width: 900px;
+        margin: auto;
+
+        .header{
+            margin: 50px 0px;
+            font-size: 56px;
+            color: #777E8B;
+            padding: 20px;
+
+            span {
+                background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+                background: linear-gradient(16deg, #4b90ff, #ff5546); 
+                background-clip: text;
+                -webkit-background-clip: text; 
+                color: transparent;
+            }    
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+            gap: 15px;
+            padding: 20px;
+
+        }
+    }
+
+}

@@ -22,26 +22,41 @@ const Main = () => {
           <div className="cards">
 
             <div className="card">
-              <p>Card 1</p>
-              <img src="#" alt="" />
+              <p>Teach me the concept of game theory in simple terms.</p>
+              <img src={assets.idea} alt="" />
             </div>
 
             <div className="card">
-              <p>Card 2</p>
-              <img src="#" alt="" />
+              <p>Write a program to print fibonacci series in Python.</p>
+              <img src={assets.code} alt="" />
             </div>
 
             <div className="card">
-              <p>Card 3</p>
-              <img src="#" alt="" />
+              <p>Write a short story about interstellar travel.</p>
+              <img src={assets.write} alt="" />
             </div>
 
             <div className="card">
-              <p>Card 4</p>
-              <img src="#" alt="" />
+              <p>Act like Darth Vader from Star Wars.</p>
+              <img src={assets.act} alt="" />
             </div>
 
           </div>
+        </div>
+
+        <div className="search-container">
+          <div className="search-box">
+            <input type="text" placeholder='Enter a promp here'/>
+            <div>
+              <img src={assets.image} alt="" />
+              <img src={assets.mic} alt="" />
+              <img src={assets.send} alt="" />
+            </div>
+          </div>
+          <p className='small-text'>
+          HAL-1000 may display inaccurate info, including about people, so double-check its responses.
+          </p>
+
         </div>
     </div>
   )

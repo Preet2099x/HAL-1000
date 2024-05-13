@@ -16,7 +16,7 @@ const Main = () => {
 
           <div className="header">
             <p><span>Hello, Anmol</span></p>
-            <p>How can I help you today?</p>
+            <p><span>How can I help you today?</span></p>
           </div>
 
           <div className="cards">

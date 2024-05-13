@@ -6,6 +6,12 @@ import act from './act.png'
 import image from './image.png'
 import mic from './mic.png'
 import send from './send.png'
+import menu from './menu.png'
+import plus from './plus.png'
+import chat from './chat.png'
+import help from './help.png'
+import history from './history.png'
+import setting from './setting.png'
 
 export const assets = {
     user,
@@ -16,4 +22,10 @@ export const assets = {
     image,
     mic,
     send,
+    menu,
+    plus,
+    chat,
+    help,
+    history,
+    setting,
 }

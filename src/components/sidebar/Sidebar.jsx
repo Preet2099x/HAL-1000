@@ -7,7 +7,7 @@ const Sidebar = ()=> {
   const [extended,setExtended] = useState(false)
 
   return (
-    <div className="main">
+    <div className="main-sidebar">
 
       <div className="top">
         <img onClick={()=>setExtended(prev=>!prev)} className='menu' src={assets.menu} alt="" />

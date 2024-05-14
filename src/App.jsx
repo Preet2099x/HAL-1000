@@ -1,13 +1,19 @@
 import React from 'react';
-
 import Sidebar from './components/sidebar/Sidebar';
-import Main from './components/main/Main';
+import Main from './components/main/Main'
+ 
 
 const App = ()=> {
   return (
     <>
+    <div className="sidebar">
       <Sidebar/>
-      {/* <Main/> */}
+    </div>
+    <div className="main">
+      <Main/>
+    </div>
+      
+      
     </>
     
   )

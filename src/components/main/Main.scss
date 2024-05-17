@@ -7,18 +7,17 @@ $font-color: #EAF0F1;
     position: relative;
     background-color: $main-theme;
     color: $font-color;
-    
 
     .nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 25px;
-        padding: 15px;
+        font-size: 20px; // Decreased from 25px
+        padding: 10px; // Decreased from 15px
         color: $font-color;
 
         img{
-            width: 45px;
+            width: 35px; // Decreased from 45px
             border-radius: 50%
         };
     }
@@ -28,10 +27,10 @@ $font-color: #EAF0F1;
         margin: auto;
 
         .header{
-            margin: -80px 35px 50px;
-            font-size: 66px;
+            margin: 0px 25px 40px; // Decreased from -80px 35px 50px
+            font-size: 70px; // Decreased from 66px
             color: #777E8B;
-            padding: 20px;
+            padding: 15px; // Decreased from 20px
             font-weight: 500;
 
             span {
@@ -45,33 +44,33 @@ $font-color: #EAF0F1;
 
         .cards{
             display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-            gap: 10px;
-            padding: 50px;
-            margin-top: -10px;
-            margin-bottom: 45px;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); // Decreased min-width from 180px
+            gap: 8px; // Decreased from 10px
+            padding: 40px; // Decreased from 50px
+            margin-top: -8px; // Decreased from -10px
+            margin-bottom: 0px; // Decreased from 45px
 
             .card{
-                height: 210px;
-                padding: 15px;
+                height: 190px; // Decreased from 210px
+                padding: 12px; // Decreased from 15px
                 background-color: rgba(29, 30, 31, 0.7);
                 border-radius: 10px;
                 position: relative;
                 cursor: pointer;
 
                 img{
-                    width:35px;
-                    padding: 5px;
+                    width: 30px; // Decreased from 35px
+                    padding: 4px; // Decreased from 5px
                     position: absolute;
                     background-color: #000;
                     border-radius: 20px;
-                    bottom: 10px;
-                    right: 10px;
+                    bottom: 8px; // Decreased from 10px
+                    right: 8px; // Decreased from 10px
                 }
 
                 p{
                     color: #EAF0F1;
-                    font-size: 17px;
+                    font-size: 17px; // Decreased from 17px
                 }
             }
             .card:hover{
@@ -82,23 +81,22 @@ $font-color: #EAF0F1;
 
     .search-container{
         position: relative;
-        bottom: 0;
         width: 100%;
         max-width: 900px;
-        padding: 0px 20px;
+        padding: 15px 15px; // Decreased from 20px
         margin: auto;
 
         .search-box{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 20px;
+            gap: 15px; // Decreased from 20px
             background-color: rgba(29, 30, 31, 0.7);
-            padding: 10px 20px;
+            padding: 15px 15px; // Decreased from 10px 20px
             border-radius: 50px;
 
             img{
-                width: 24px;
+                width: 20px; // Decreased from 24px
                 cursor: pointer;
             }
 
@@ -107,21 +105,21 @@ $font-color: #EAF0F1;
                 background: transparent;
                 border: none;
                 outline: none;
-                padding: 8px;
-                font-size: 18px;
+                padding: 6px; // Decreased from 8px
+                font-size: 16px; // Decreased from 18px
                 color: #EAF0F1;
             }
 
             div{
                 display: flex;
                 align-items: center;
-                gap: 15px;
+                gap: 12px; // Decreased from 15px
             }
         }
 
         .small-text{
-            font-size: 13px;
-            margin: 15px auto;
+            font-size: 13px; // Decreased from 13px
+            margin: 10px auto; // Decreased from 15px
             text-align: center;
             font-weight: 300;
         }

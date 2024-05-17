@@ -47,7 +47,7 @@ $font-color: #EAF0F1;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); // Decreased min-width from 180px
             gap: 8px; // Decreased from 10px
             padding: 40px; // Decreased from 50px
-            margin-top: -8px; // Decreased from -10px
+            margin-top: -10px; // Decreased from -10px
             margin-bottom: 0px; // Decreased from 45px
 
             .card{
@@ -96,7 +96,7 @@ $font-color: #EAF0F1;
             border-radius: 50px;
 
             img{
-                width: 20px; // Decreased from 24px
+                width: 23px; // Decreased from 24px
                 cursor: pointer;
             }
 
@@ -106,7 +106,7 @@ $font-color: #EAF0F1;
                 border: none;
                 outline: none;
                 padding: 6px; // Decreased from 8px
-                font-size: 16px; // Decreased from 18px
+                font-size: 19px; // Decreased from 18px
                 color: #EAF0F1;
             }
 

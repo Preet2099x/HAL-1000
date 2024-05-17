@@ -1,6 +1,7 @@
 $sidebar-theme: #0e0e0e;
 
 .main-sidebar{
+    // flex: 1;
     min-height: 100vh;
     display: inline-flex;
     flex-direction: column;
@@ -38,6 +39,7 @@ $sidebar-theme: #0e0e0e;
     .recent-title{
         margin-top: 30px;
         margin-bottom: 20px;
+        color: white;
     }
 
     .recent-entry{

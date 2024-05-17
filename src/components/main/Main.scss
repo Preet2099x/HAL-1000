@@ -4,17 +4,17 @@ $font-color: #EAF0F1;
 .main{
     flex: 1;
     min-height: 100vh;
-    
     position: relative;
     background-color: $main-theme;
     color: $font-color;
+    
 
     .nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: 25px;
-        padding: 30px;
+        padding: 15px;
         color: $font-color;
 
         img{
@@ -28,7 +28,7 @@ $font-color: #EAF0F1;
         margin: auto;
 
         .header{
-            margin: -40px 35px 50px;
+            margin: -80px 35px 50px;
             font-size: 66px;
             color: #777E8B;
             padding: 20px;

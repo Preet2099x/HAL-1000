@@ -8,6 +8,12 @@ const Main = () => {
 
   const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSent();
+    }
+  }
+
   return (
     <div className="main">
 
@@ -75,7 +81,11 @@ const Main = () => {
 
         <div className="search-container">
           <div className="search-box">
-            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter a promp here'/>
+            <input onChange={(e)=>setInput(e.target.value)} 
+            value={input} 
+            onKeyDown={handleKeyDown}
+            type="text" 
+            placeholder='Enter a promp here'/>
             <div>
               <img src={assets.image} alt="" />
               <img src={assets.mic} alt="" />

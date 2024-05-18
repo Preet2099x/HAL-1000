@@ -10,4 +10,18 @@
 #root{
   min-height: 100vh;
   display: flex;
+  /* animation: fadeInDark 2s forwards; */
 }
+/* 
+@keyframes fadeInDark {
+  0% {
+    opacity: 0;
+    color: #333;
+    background-color: #333;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+    background-color: black;
+  }
+} */

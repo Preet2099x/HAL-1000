@@ -89,7 +89,7 @@ const Main = () => {
             <div>
               <img src={assets.image} alt="" />
               <img src={assets.mic} alt="" />
-              <img onClick={()=>onSent()} src={assets.send} alt="" />
+              {input?<img onClick={()=>onSent()} src={assets.send} alt="" />:null}
             </div>
           </div>
           <p className='small-text'>

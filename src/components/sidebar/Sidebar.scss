@@ -62,6 +62,7 @@ $sidebar-theme: #0e0e0e;
     .recent {
         display: none;
         flex-direction: column;
+        
 
         &.visible {
             display: flex;
@@ -133,4 +134,11 @@ $sidebar-theme: #0e0e0e;
             cursor: pointer;
         }
     }
+}
+
+@media (max-width) {
+    .main-sidebar{
+        display: none;
+    }
+    
 }

@@ -1,6 +1,6 @@
 $sidebar-theme: #0e0e0e;
 
-.main-sidebar{
+.main-sidebar {
     flex: 1;
     min-height: 100vh;
     display: inline-flex;
@@ -8,61 +8,128 @@ $sidebar-theme: #0e0e0e;
     justify-content: space-between;
     background-color: $sidebar-theme;
     padding: 25px 15px;
+    width: 80px; // width when collapsed
+    transition: width 0.3s ease;
 
-    img{
+    &.extended {
+        width: 200px; // width when extended
+    }
+
+    img {
         width: 20px;
     }
 
-    .menu{
+    .menu {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
         display: block;
-        margin-left: 10px;
+        // margin-left: 10px;
+        padding: 10px;
+        
         cursor: pointer;
     }
 
-    .new-chat{
+    .menu:hover {
+        background-color: #2c3335;
+    }
+
+    .new-chat {
+        height: 40px;
+        width: 40px;
         margin-top: 50px;
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        padding: 10px 15px;
-        background-color: #4C4B4B;
+        justify-content: center;
+        padding: 10px 1px;
+        background-color: #4c4b4b;
         border-radius: 50px;
         font-size: 14px;
-        color: #DAE0E2;
+        color: #dae0e2;
+
+        p {
+            display: none;
+        }
+
+        img{
+            height: 20px;
+            width: 20px;
+        }
+        
     }
 
-    .recent{
-        display: flex;
+    .recent {
+        display: none;
         flex-direction: column;
+
+        &.visible {
+            display: flex;
+        }
     }
 
-    .recent-title{
+    .recent-title {
         margin-top: 30px;
         margin-bottom: 20px;
         color: white;
     }
 
-    .recent-entry{
+    .recent-entry {
         display: flex;
         align-items: start;
         gap: 10px;
         padding: 10px;
-        padding-right: 40px;
+        // padding-right: 40px;
         border-radius: 50px;
         color: white;
         cursor: pointer;
     }
 
-    .recent-entry:hover{
-        background-color: #2C3335;
+    .recent-entry:hover {
+        background-color: #2c3335;
     }
 
-    .bottom{
+    .bottom {
         display: flex;
         flex-direction: column;
 
+        .bottom-item {
+            height: 40px;
+            width: 40px;
+            padding-right: 10px;
+            cursor: pointer;
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    &.extended {
+        .new-chat p {
+            display: inline;
+        }
+
+        .new-chat{
+            height: 45px;
+            width: 130px;
+            justify-content: start;
+            padding-left: 15px;
+        }
+        
+
+        .recent {
+            display: flex;
+        }
+
+        .bottom-item p {
+            display: inline;
+        }
+
         .bottom-item{
-            padding-right: 10px; 
+            height: auto;
+            width: auto;
+            padding-right: 10px;
             cursor: pointer;
         }
     }

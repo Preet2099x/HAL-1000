@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Main.scss'
 import '../../assets/Assets'
 import { assets } from '../../assets/Assets';
+import { Context } from '../../context/Context';
 
 const Main = () => {
+
+  const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
+
   return (
     <div className="main">
 
@@ -14,6 +18,9 @@ const Main = () => {
 
         <div className="main-container">
 
+          {!showResult
+          ?
+          <>
           <div className="header">
             <p><span>Hello, Anmol</span></p>
             <p><span>How can I help you today?</span></p>
@@ -42,15 +49,37 @@ const Main = () => {
             </div>
 
           </div>
+          </>
+          :<div className='result'>
+            <div className="result-title">
+              <img src={assets.user} alt="" />
+              <p>{recentPrompt}</p>
+            </div>
+            <div className="result-data">
+              <img src={assets.hal} alt="" />
+              {loading
+              ?<div className='loader'>
+                <hr/>
+                <hr/>
+                <hr/>
+              </div>
+              :<p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+              
+            }
+            </div>
+          </div>
+          }
+
+
         </div>
 
         <div className="search-container">
           <div className="search-box">
-            <input type="text" placeholder='Enter a promp here'/>
+            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter a promp here'/>
             <div>
               <img src={assets.image} alt="" />
               <img src={assets.mic} alt="" />
-              <img src={assets.send} alt="" />
+              <img onClick={()=>onSent()} src={assets.send} alt="" />
             </div>
           </div>
           <p className='small-text'>

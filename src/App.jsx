@@ -4,6 +4,7 @@ import Main from './components/main/Main'
  
 
 const App = ()=> {
+  
   return (
     <>
     <div className="sidebar">
@@ -12,8 +13,6 @@ const App = ()=> {
     <div className="main">
       <Main/>
     </div>
-      
-      
     </>
     
   )

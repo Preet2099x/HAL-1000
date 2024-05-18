@@ -12,6 +12,7 @@ import chat from './chat.png'
 import help from './help.png'
 import history from './history.png'
 import setting from './setting.png'
+import hal from './hal.png'
 
 export const assets = {
     user,
@@ -28,4 +29,5 @@ export const assets = {
     help,
     history,
     setting,
+    hal,
 }

@@ -68,6 +68,9 @@ $sidebar-theme: #0e0e0e;
             display: flex;
         }
     }
+    .new-chat:hover{
+        background-color:#2c3335;
+    }
 
     .recent-title {
         margin-top: 30px;
@@ -80,7 +83,7 @@ $sidebar-theme: #0e0e0e;
         align-items: start;
         gap: 10px;
         padding: 10px;
-        // padding-right: 40px;
+        
         border-radius: 50px;
         color: white;
         cursor: pointer;

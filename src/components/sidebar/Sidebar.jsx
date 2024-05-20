@@ -35,7 +35,7 @@ const Sidebar = () => {
               return(
                 <div onClick={()=>loadPrompt(item)} className="recent-entry">
                   <img src={assets.chat} alt="chat" />
-                  <p>{item.slice(0,18)} ...</p>
+                  <p>{item.slice(0,13)} ...</p>
                 </div>
               )
             })}
